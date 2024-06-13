@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page div {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root, :root.dark {
+    --color-primary-bg: #252D44;
+    --color-fg: #a4a5a5;
+    --color-secondary-bg: #252D44;
+    --color-buttons-bg: #EAE3DB;
+    --transition-delay: 0.5s;
+    --color-bar: #181F32;
+    --color-backg: #3B4664;
+}
+
+:root.light {
+    --color-primary-bg: #D3CDCD;
+    --color-fg: #292d36;
+    --color-secondary-bg: #D3CDCD;
+    --color-buttons-bg: #E5E4E0;
+    --color-bar: #e7e2e2;
+    --color-backg: #E6E6E6;
+}
+
+:root.third {
+    --color-primary-bg: #1E0836;
+    --color-fg: #F5D866;
+    --color-secondary-bg: #1E0836 ;
+    --color-buttons-bg: #331B4D;
+    --color-bar: #1E0836;
+    --color-backg: #17062A;
+}
+
+body {
+    background: var(--color-backg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary-bg);
+    width: 300px;
+    border-radius: 20px;
+    padding-top: 20px;
+    box-shadow: 0 0 20px 0 var(--color-secondary-bg);
+}
+
+.dark_mode {
+    margin: 4px auto;
+    background-color: var(--color-buttons-bg);
+    padding: 4px 6px;
+    border-radius: 8px;
+}
+
+.dark_mode .dark, .dark_mode .light {
+    font-size: 1rem;
+    color: var(--color-fg);
+    margin: 2px 8px;
+    cursor: pointer;
+}
+
+.resultbox {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+.resultbox input {
+    text-align: right;
+    width: 80%;
+    padding: 3px 10px;
+    background: var(--color-bar);
+    border: 0;
+    color: var(--color-fg);
+    cursor: default;
+}
+
+.resultbox input[name="expression"] {
+    letter-spacing: .2em;
+}
+
+.resultbox input[name="result"] {
+    font-size: 1.8em;
+    font-weight: 700;
+    padding: 4px 10px;
+    letter-spacing: .1em;
+}
+
+.buttons {
+    width: calc(100% - 20px);
+    background: var(--color-buttons);
+    padding-top: 20px;
+    padding: 20px 10px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: space-around;
+    margin: 3px auto;
+    margin: 8px auto;
+}
+
+.buttons div input {
+    color: var(--color-fg);
+    background: var(--color-buttons-bg);
+    border: 0;
+    width: 60px;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.fnkeys {
+    color: #252D44 !important;
+}
+.operator {
+    color: #f47a7a !important;
+}
+.equal { width: 130px !important; }
+
